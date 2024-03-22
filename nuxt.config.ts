@@ -9,6 +9,9 @@ export default defineNuxtConfig({
       },
       meta: [
         {
+          charset: 'utf-8',
+        },
+        {
           name: 'description',
           content:
             'Twilight is the next generation productivity tool that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
@@ -35,6 +38,14 @@ export default defineNuxtConfig({
           property: 'og:url',
           content: 'https://twilight-landing.vercel.app/',
         },
+        {
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          property: 'og:site_name',
+          content: 'Twilight',
+        },
         // Twitter
         {
           name: 'twitter:card',
@@ -58,7 +69,9 @@ export default defineNuxtConfig({
       link: [
         {
           href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap',
-          rel: 'stylesheet',
+          rel: 'preload',
+          as: 'style',
+          onload: "this.onload=null;this.rel='stylesheet'",
         },
         {
           rel: 'icon',
