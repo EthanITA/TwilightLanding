@@ -1,11 +1,5 @@
 <template>
   <Header />
-  <main>
-    <HeroSection />
-    <FeaturesProduct />
-    <FeaturesLarge />
-    <PlusJoinTeam />
-    <PlusCTA />
-  </main>
+  <NuxtPage />
   <Footer />
 </template>
