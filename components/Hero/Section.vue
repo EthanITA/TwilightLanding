@@ -44,7 +44,7 @@
     </div>
     <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
       <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-        <img alt="Your Company" class="h-11" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=500" />
+        <LazyNuxtImg alt="Your Company" class="h-11" loading="lazy" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=500" />
         <div class="mt-24 sm:mt-32 lg:mt-16">
           <a class="inline-flex space-x-6" href="#">
             <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20"
@@ -72,10 +72,11 @@
       </div>
       <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
         <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-          <img
+          <LazyNuxtImg
             alt="App screenshot"
             class="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
             height="1442"
+            loading="lazy"
             src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
             width="2432"
           />

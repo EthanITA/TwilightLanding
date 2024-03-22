@@ -11,10 +11,11 @@
     </div>
     <div class="relative overflow-hidden pt-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <img
+        <LazyNuxtImg
           alt="App screenshot"
           class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"
           height="1442"
+          loading="lazy"
           src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
           width="2432"
         />

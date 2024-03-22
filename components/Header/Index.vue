@@ -4,7 +4,7 @@
       <div class="flex lg:flex-1">
         <a class="-m-1.5 p-1.5" href="#">
           <span class="sr-only">Your Company</span>
-          <img alt="" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
+          <LazyNuxtImg alt="" class="h-8 w-auto" loading="lazy" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -26,7 +26,7 @@
         <div class="flex items-center justify-between">
           <a class="-m-1.5 p-1.5" href="#">
             <span class="sr-only">Your Company</span>
-            <img alt="" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
+            <LazyNuxtImg alt="" class="h-8 w-auto" loading="lazy" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
           </a>
           <button class="-m-2.5 rounded-md p-2.5 text-gray-400" type="button" @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
