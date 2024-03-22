@@ -6,6 +6,10 @@ html * {
     font-family: 'Nunito Sans', 'Noto Sans', sans-serif;
 }
 
+html *::selection {
+    @apply bg-indigo-500/40 text-white;
+}
+
 :root {
     font-synthesis: none;
     text-rendering: optimizeLegibility;

@@ -1,3 +1,11 @@
 <template>
-  <div></div>
+  <Header />
+  <main>
+    <HeroSection />
+    <FeaturesProduct />
+    <FeaturesLarge />
+    <PlusJoinTeam />
+    <PlusCTA />
+  </main>
+  <Footer />
 </template>
