@@ -1,27 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/ui', '@nuxt/image', '@vite-pwa/nuxt'],
-  pwa: {
-    manifest: {
-      name: 'Twilight',
-      short_name: 'Twilight',
-      description:
-        'Twilight is the next generation productivity tool that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
-      theme_color: '#6365f1',
-      background_color: '#111827',
-      display: 'standalone',
-      lang: 'en',
-      scope: '/',
-      start_url: '/',
-      icons: [
-        {
-          src: '/favicon.svg',
-          sizes: '192x192',
-          type: 'image/svg+xml',
-        },
-      ],
-    },
-  },
+  modules: ['@nuxt/ui', '@nuxt/image'],
   devtools: { enabled: false, telemetry: false },
   app: {
     head: {
