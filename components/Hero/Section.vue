@@ -31,7 +31,7 @@
           :class="{
             'opacity-100': mounted,
           }"
-          class="text-4xl font-semibold tracking-tight text-gray-900 opacity-0 transition-all duration-[2000ms] ease-in-out sm:text-6xl"
+          class="text-4xl font-semibold tracking-tight text-gray-900 opacity-0 transition-all duration-[2500ms] ease-in-out sm:text-6xl"
         >
           Embrace the Future of
           <span class="flex items-center justify-center gap-2 text-center font-bold text-secondary">
@@ -53,7 +53,7 @@
             :class="{
               'opacity-100': mounted,
             }"
-            class="opacity-0 transition-opacity delay-[1750ms] duration-1000"
+            class="opacity-0 transition-opacity delay-[2250ms] duration-1000"
           >
             Plan.
           </span>
@@ -61,7 +61,7 @@
             :class="{
               'opacity-100': mounted,
             }"
-            class="opacity-0 transition-opacity delay-[2750ms] duration-1000"
+            class="opacity-0 transition-opacity delay-[3250ms] duration-1000"
           >
             Execute.
           </span>
@@ -69,7 +69,7 @@
             :class="{
               'opacity-100': mounted,
             }"
-            class="opacity-0 transition-opacity delay-[3750ms] duration-1000"
+            class="opacity-0 transition-opacity delay-[4250ms] duration-1000"
           >
             Adapt.
           </span>
@@ -78,7 +78,7 @@
           :class="{
             'opacity-100': mounted,
           }"
-          class="mt-10 flex items-center justify-center gap-x-6 opacity-0 transition-all delay-[4.75s] duration-[3s] ease-in-out"
+          class="mt-10 flex items-center justify-center gap-x-6 opacity-0 transition-all delay-[5250ms] duration-[3s] ease-in-out"
         >
           <a
             class="before:ease relative overflow-hidden rounded-md bg-secondary px-4 py-3 text-lg font-semibold text-white shadow-2xl transition-all duration-700 before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:bg-primary/95 hover:shadow-primary hover:before:-translate-x-52 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
