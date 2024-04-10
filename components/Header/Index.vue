@@ -7,7 +7,7 @@
           <NuxtImg alt="Twilight" class="h-8 w-auto" loading="lazy" src="/twilight-logo.svg" />
         </a>
       </div>
-      <div class="flex lg:hidden">
+      <div v-if="false" class="flex lg:hidden">
         <button class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5" type="button" @click="mobileMenuOpen = true">
           <span class="sr-only">Open main menu</span>
           <Bars3Icon aria-hidden="true" class="h-6 w-6" />
