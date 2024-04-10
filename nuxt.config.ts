@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/ui', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   devtools: { enabled: false, telemetry: false },
   app: {
     head: {

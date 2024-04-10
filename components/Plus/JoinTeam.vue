@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-gray-900 py-24 sm:py-32">
+  <div class="relative py-24 sm:py-32">
     <div class="isolate">
       <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div

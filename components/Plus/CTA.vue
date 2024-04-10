@@ -1,6 +1,6 @@
 <!-- CTA section -->
 <template>
-  <div class="isolate bg-gray-900 px-6 py-32 sm:py-40 lg:px-8">
+  <div class="px-6 py-32 sm:py-40 lg:px-8">
     <svg
       aria-hidden="true"
       class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -51,7 +51,7 @@
           href="#"
           >Get started</a
         >
-        <a class="text-sm font-semibold leading-6 text-white" href="#">Learn more <span aria-hidden="true">→</span></a>
+        <a class="text-sm font-semibold leading-6" href="#">Learn more <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </div>

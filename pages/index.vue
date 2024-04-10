@@ -1,10 +1,12 @@
 <template>
   <main>
     <HeroSection />
-    <FeaturesProduct />
-    <FeaturesLarge />
-    <PlusJoinTeam />
-    <PlusCTA />
+    <template v-if="false">
+      <FeaturesProduct />
+      <FeaturesLarge />
+      <PlusJoinTeam />
+      <PlusCTA />
+    </template>
   </main>
 </template>
 <script lang="ts" setup></script>

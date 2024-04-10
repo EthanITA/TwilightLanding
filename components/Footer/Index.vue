@@ -1,14 +1,14 @@
 <template>
-  <footer aria-labelledby="footer-heading" class="bg-gray-900">
+  <footer aria-labelledby="footer-heading">
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-4 lg:px-8">
       <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
         <div class="flex space-x-6 md:order-2">
-          <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-500 hover:text-gray-400">
+          <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="hover:text-gray-400">
             <span class="sr-only">{{ item.name }}</span>
             <component :is="item.icon" aria-hidden="true" class="h-6 w-6" />
           </a>
         </div>
-        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2024 Twilight. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -45,7 +45,7 @@ const navigation = {
   social: [
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/marcodong-838453/',
+      href: 'https://www.linkedin.com/company/twilight-ai/',
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
