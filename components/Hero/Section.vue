@@ -82,7 +82,7 @@
           }"
           class="mt-10 flex justify-center transition-all duration-[2s]"
         >
-          <a
+          <button
             :class="{
               'rounded-2xl bg-secondary text-base text-white shadow-2xl duration-1000 hover:border-primary hover:bg-primary hover:shadow-primary focus-visible:outline-primary':
                 animationDone,
@@ -92,10 +92,9 @@
                 animationDone,
             }"
             class="relative overflow-hidden border border-secondary px-4 py-3 font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-            href="#"
           >
             <span class="relative z-10">Join the waiting list ✨</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
