@@ -77,21 +77,21 @@
         </p>
         <div
           :class="{
-            'text-lg opacity-100': mounted,
-            'text-sm opacity-0': !mounted,
+            'opacity-100': mounted,
+            'opacity-0': !mounted,
           }"
-          class="mt-10 flex items-center justify-center gap-x-6 transition-all duration-[2s] ease-in-out"
+          class="mt-10 flex justify-center transition-all duration-[2s]"
         >
           <a
             :class="{
-              'rounded-2xl bg-secondary text-white shadow-2xl duration-1000 hover:border-primary hover:bg-primary hover:shadow-primary focus-visible:outline-primary':
+              'rounded-2xl bg-secondary text-base text-white shadow-2xl duration-1000 hover:border-primary hover:bg-primary hover:shadow-primary focus-visible:outline-primary':
                 animationDone,
-              'rounded-md border-secondary text-secondary shadow-md duration-300 hover:border-secondary hover:bg-secondary/95 hover:text-white hover:shadow-secondary focus-visible:outline-secondary':
+              'rounded-md text-sm text-secondary shadow-md duration-300 hover:border-secondary hover:bg-secondary/95 hover:text-white hover:shadow-secondary focus-visible:outline-secondary':
                 !animationDone,
-              'before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700':
+              'before:ease before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-52':
                 animationDone,
             }"
-            class="before:ease relative overflow-hidden border px-4 py-3 font-semibold transition-all hover:before:-translate-x-52 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            class="relative overflow-hidden border border-secondary px-4 py-3 font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             href="#"
           >
             <span class="relative z-10">Join the waiting list ✨</span>
