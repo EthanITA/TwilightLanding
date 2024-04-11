@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-gtag'],
   devtools: { enabled: false, telemetry: false },
   app: {
     head: {
@@ -96,4 +96,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.css'],
+  gtag: {
+    id: 'G-5GTWL3S8GP',
+  },
 });
