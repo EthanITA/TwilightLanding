@@ -86,7 +86,7 @@
             :class="{
               'rounded-2xl bg-secondary text-base text-white shadow-2xl duration-1000 hover:border-primary hover:bg-primary hover:shadow-primary focus-visible:outline-primary':
                 animationDone,
-              'rounded-md text-sm text-secondary shadow-md duration-300 hover:border-secondary hover:bg-secondary/95 hover:text-white hover:shadow-secondary focus-visible:outline-secondary':
+              'rounded-md text-sm text-secondary duration-300 hover:border-secondary hover:bg-secondary/95 hover:text-white focus-visible:outline-secondary':
                 !animationDone,
               'before:ease before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-52':
                 animationDone,
