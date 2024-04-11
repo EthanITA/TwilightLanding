@@ -2,9 +2,9 @@
   <header>
     <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
-        <a class="-m-1.5 p-1.5" href="#">
+        <a class="-m-1.5 select-none p-1.5" draggable="false" href="#">
           <span class="sr-only">Twilight</span>
-          <NuxtImg alt="Twilight" class="h-8 w-auto" loading="lazy" src="/twilight-logo.svg" />
+          <NuxtImg alt="Twilight" class="h-8 w-auto" draggable="false" loading="lazy" src="/twilight-logo.svg" />
         </a>
       </div>
       <div v-if="false" class="flex lg:hidden">
