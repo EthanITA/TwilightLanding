@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Twilight is the next generation productivity tool that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
+            'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
         },
         {
           name: 'viewport',
@@ -23,12 +23,12 @@ export default defineNuxtConfig({
         // Open Graph
         {
           property: 'og:title',
-          content: 'Twilight: Next generation productivity tool',
+          content: 'Twilight: Embrace The Future of Productivity',
         },
         {
           property: 'og:description',
           content:
-            'Twilight is the next generation productivity tool that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
+            'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
         },
         {
           property: 'og:image',
@@ -53,19 +53,19 @@ export default defineNuxtConfig({
         },
         {
           name: 'twitter:title',
-          content: 'Twilight: Next generation productivity tool',
+          content: 'Twilight: Embrace The Future of Productivity',
         },
         {
           name: 'twitter:description',
           content:
-            'Twilight is the next generation productivity tool that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
+            'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
         },
         {
           name: 'twitter:image',
           content: 'https://twilight-landing.vercel.app/splash.png',
         },
       ],
-      title: 'Twilight: Next generation productivity tool',
+      title: 'Twilight: Embrace The Future of Productivity',
       link: [
         {
           href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap',
@@ -89,7 +89,7 @@ export default defineNuxtConfig({
             url: 'https://twilight-landing.vercel.app/',
             logo: 'https://twilight-landing.vercel.app/favicon.svg',
             description:
-              'Twilight is the next generation productivity tool that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
+              'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
           }),
         },
       ],
