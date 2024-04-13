@@ -12,7 +12,7 @@ html * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    @apply h-full w-full bg-[#efefef] bg-blend-darken text-gray-600;
+    @apply h-full w-full bg-white text-gray-600;
     color-scheme: light;
 }
 

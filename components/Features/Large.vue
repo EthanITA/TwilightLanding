@@ -2,15 +2,14 @@
   <div class="py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-base font-semibold leading-7 text-indigo-400">Everything you need</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">No server? No problem.</p>
-        <p class="mt-6 text-lg leading-8 text-gray-300">
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">No server? No problem.</h2>
+        <p class="mt-6 text-lg leading-8">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.
         </p>
       </div>
     </div>
     <div class="relative overflow-hidden pt-16">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl bg-gradient-to-b to-primary/5 px-6 lg:px-8">
         <LazyNuxtImg
           alt="App screenshot"
           class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"
@@ -20,13 +19,13 @@
           width="2432"
         />
         <div aria-hidden="true" class="relative">
-          <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]" />
+          <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-primary/5 pt-[7%]" />
         </div>
       </div>
     </div>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl
-        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16"
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16"
       >
         <div v-for="feature in features" :key="feature.name" class="relative pl-9">
           <dt class="inline font-semibold">

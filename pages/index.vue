@@ -1,8 +1,8 @@
 <template>
   <main>
     <HeroSection />
+    <FeaturesProduct />
     <template v-if="false">
-      <FeaturesProduct />
       <FeaturesLarge />
       <PlusJoinTeam />
       <PlusCTA />

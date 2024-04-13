@@ -3,7 +3,7 @@
     <div class="isolate">
       <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div
-          class="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20"
+          class="mx-auto flex max-w-2xl flex-col gap-16 bg-primary/5 px-6 py-16 shadow-md ring-1 ring-primary/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20"
         >
           <LazyNuxtImg
             alt=""
@@ -12,18 +12,20 @@
             src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
           />
           <div class="w-full flex-auto">
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Join our team</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-300">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Join our team</h2>
+            <p class="mt-6 text-lg leading-8">
               Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
             </p>
-            <ul class="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-white sm:grid-cols-2" role="list">
+            <ul class="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2" role="list">
               <li v-for="benefit in benefits" :key="benefit" class="flex gap-x-3">
                 <CheckCircleIcon aria-hidden="true" class="h-7 w-5 flex-none" />
                 {{ benefit }}
               </li>
             </ul>
             <div class="mt-10 flex">
-              <a class="text-sm font-semibold leading-6 text-indigo-400" href="#">See our job postings <span aria-hidden="true">&rarr;</span></a>
+              <a class="text-sm font-semibold leading-6 text-secondary-500 transition-all hover:underline" href="#"
+                >See our job postings <span aria-hidden="true">&rarr;</span></a
+              >
             </div>
           </div>
         </div>
