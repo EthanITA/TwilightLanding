@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-y-hidden py-24 sm:py-32">
+  <div class="relative py-24 sm:py-32">
     <div
       aria-hidden="true"
       class="pointer-events-none absolute inset-x-0 top-[15rem] -z-10 transform-gpu blur-3xl sm:top-[calc(100%-80rem)] lg:top-[calc(100%-10rem)]"
@@ -50,7 +50,7 @@
         </div>
 
         <Intersection
-          class="mt-auto flex h-fit flex-1 flex-col items-end justify-end overflow-x-hidden md:ml-4 lg:ml-0 [&>*]:w-4/5"
+          class="mt-auto flex flex-1 flex-col items-end justify-end overflow-x-hidden md:ml-4 lg:ml-0 [&>*]:w-4/5"
           @intersect="isIntersecting = $event"
         >
           <TransitionGroup name="automationsDemo" tag="div">
