@@ -3,8 +3,8 @@
     <HeroSection />
     <FeaturesProduct2 />
     <FeaturesProduct />
+    <FeaturesVision />
     <template v-if="false">
-      <FeaturesLarge />
       <PlusJoinTeam />
       <PlusCTA />
     </template>
