@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <nav aria-label="Global" class="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
         <a class="-m-1.5 select-none p-1.5" draggable="false" href="#">
           <span class="sr-only">Twilight</span>

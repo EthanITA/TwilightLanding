@@ -1,6 +1,6 @@
 <template>
   <div class="py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-6xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
         <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">No server? No problem.</h2>
         <p class="mt-6 text-lg leading-8">
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="relative overflow-hidden pt-16">
-      <div class="mx-auto max-w-7xl bg-gradient-to-b to-primary/5 px-6 lg:px-8">
+      <div class="mx-auto max-w-6xl bg-gradient-to-b to-primary/5 px-6 lg:px-8">
         <LazyNuxtImg
           alt="App screenshot"
           class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+    <div class="mx-auto mt-16 max-w-6xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16"
       >
