@@ -2,7 +2,7 @@
   <div class="relative py-24 sm:py-32">
     <div
       aria-hidden="true"
-      class="pointer-events-none absolute inset-x-0 top-[15rem] -z-10 transform-gpu blur-3xl sm:top-[calc(100%-80rem)] lg:top-[calc(100%-10rem)]"
+      class="pointer-events-none absolute inset-x-0 top-[15rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-80rem)] lg:top-[calc(100%-10rem)]"
     >
       <div
         class="relative left-[calc(50%)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 -rotate-90 bg-gradient-to-tr from-primary-500 to-secondary opacity-30 sm:left-[calc(50%)] sm:w-[72.1875rem] lg:rotate-180"

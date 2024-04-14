@@ -1,7 +1,7 @@
 <template>
   <footer aria-labelledby="footer-heading">
     <div class="mx-auto max-w-6xl px-6 pb-8 pt-4 lg:px-8">
-      <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
+      <div class="mt-16 border-t border-white/10 pt-8 sm:mt-4 md:flex md:items-center md:justify-between lg:mt-12">
         <div class="flex space-x-6 md:order-2">
           <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="hover:text-gray-500">
             <span class="sr-only">{{ item.name }}</span>

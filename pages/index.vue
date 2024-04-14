@@ -4,10 +4,7 @@
     <FeaturesProduct2 />
     <FeaturesProduct />
     <FeaturesVision />
-    <template v-if="false">
-      <PlusJoinTeam />
-      <PlusCTA />
-    </template>
+    <PlusCTA2 />
   </main>
 </template>
 <script lang="ts" setup></script>
