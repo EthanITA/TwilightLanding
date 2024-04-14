@@ -30,15 +30,16 @@
     </div>
 
     <div class="mx-auto max-w-7xl overflow-x-hidden px-6 lg:px-8">
-      <div class="mx-auto grid max-w-2xl grid-cols-1 justify-end gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="lg:pr-8 lg:pt-4">
           <div class="lg:max-w-lg">
-            <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Focus on what truly matters</h2>
-            <p class="mt-6 text-lg leading-8">Do what you have to do</p>
-            <p>Let Twilight help you to manage your schedule</p>
-            <dl class="invisible mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">You decide. Twilight schedule.</h2>
+            <p class="mt-6 text-lg leading-8">
+              Context switch can be a heavy toll for your concentration. Lower your distractions and achieve higher productivity
+            </p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
               <div v-for="feature in features" :key="feature.name" class="relative pl-9">
-                <dt class="inline font-semibold">
+                <dt class="inline font-bold">
                   <component :is="feature.icon" aria-hidden="true" class="absolute left-1 top-1 h-5 w-5" />
                   {{ feature.name }}
                 </dt>
@@ -65,13 +66,12 @@
 </template>
 
 <script lang="ts" setup>
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid';
 import type { Component } from 'vue';
 import FromEmily from '~/components/Demo/FromEmily.vue';
 import Twilight from '~/components/Demo/Twilight.vue';
-import ToEmily from '~/components/Demo/ToEmily.vue';
+import { CheckIcon, LockClosedIcon } from '@heroicons/vue/24/outline';
 
-const automationComponents: Component[] = [FromEmily, ToEmily, Twilight];
+const automationComponents: Component[] = [FromEmily, Twilight];
 const count = ref(-1);
 const interval = ref<NodeJS.Timeout | null>(null);
 const isIntersecting = ref(false);
@@ -91,21 +91,20 @@ watch(isIntersecting, (value) => {
 });
 
 const features = [
+  /*  {
+    name: 'Schedule.',
+    description: "Manage your day, week, month, year, and even your life. Twilight's got you covered.",
+    icon: CalendarDaysIcon,
+  },*/
   {
-    name: 'Push to deploy.',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
+    name: 'It just works.',
+    description: 'Twilight is simple to use and reliable. No overcomplicated features and unnecessary settings.',
+    icon: CheckIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    name: 'Privacy first.',
+    description: 'Your data is yours. Twilight will never share your data with anyone.',
     icon: LockClosedIcon,
-  },
-  {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
   },
 ];
 </script>

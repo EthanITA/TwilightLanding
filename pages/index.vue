@@ -1,6 +1,7 @@
 <template>
   <main>
     <HeroSection />
+    <FeaturesProduct2 />
     <FeaturesProduct />
     <template v-if="false">
       <FeaturesLarge />
