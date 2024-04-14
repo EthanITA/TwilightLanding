@@ -17,7 +17,7 @@ onMounted(() => {
   >
     Embrace the Future of
     <span class="flex items-center justify-center gap-2 text-center font-bold text-secondary">
-      <span class="selection:bg-secondary/40"> AI Productivity </span>
+      <span class="selection:bg-secondary/40"> Productivity </span>
       <IconPen />
     </span>
     with
