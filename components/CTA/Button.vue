@@ -17,7 +17,7 @@
       }"
       class="relative overflow-hidden border border-secondary px-4 py-3 font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
     >
-      <span class="relative z-10">Join the waiting list ✨</span>
+      <span class="relative z-10">Join the Waitlist ✨</span>
     </button>
   </div>
 </template>
