@@ -6,6 +6,7 @@
     }"
     class="mt-10 flex justify-center transition-all duration-[2s]"
   >
+    <CTAModal v-model:open="open" />
     <button
       ref="button"
       :class="{
@@ -31,13 +32,15 @@ const animationDone = ref(false);
 const props = defineProps<{
   animationWait?: number;
 }>();
+const open = ref(false);
 const clicked = ref(false);
 const CtaClick = () => {
   if (clicked.value) return;
   clicked.value = true;
   setTimeout(() => {
     clicked.value = false;
-  }, 150);
+    open.value = true;
+  }, 250);
 };
 
 onMounted(() => {
