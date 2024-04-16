@@ -32,7 +32,7 @@
     <div class="mx-auto max-w-6xl overflow-x-hidden px-6 lg:px-8">
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="flex items-center lg:pl-8 lg:pt-4">
-          <div class="lg:max-w-lg">
+          <div class="lg:max-w-lg" data-aos="fade-up">
             <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">You decide. Twilight schedule.</h2>
             <p class="mt-6 text-lg leading-8">
               Context switch can be a heavy toll for your concentration. Lower your distractions and achieve higher productivity
@@ -52,13 +52,12 @@
 
         <Intersection
           class="mt-auto flex h-80 flex-1 flex-col items-end justify-end overflow-x-hidden sm:h-[22rem] md:ml-4 lg:ml-0 [&>*]:w-4/5"
+          data-aos="fade-left"
           @intersect="isIntersecting = $event"
         >
-          <TransitionGroup name="automationsDemo" tag="div">
-            <template v-for="(component, i) in automationComponents">
-              <component :is="component" v-if="i <= count" :key="i" />
-            </template>
-          </TransitionGroup>
+          <template v-for="(component, i) in automationComponents">
+            <component :is="component" v-if="i <= count" :key="i" data-aos="fade-left" />
+          </template>
         </Intersection>
       </div>
     </div>
@@ -76,7 +75,9 @@ const count = ref(-1);
 const interval = ref<NodeJS.Timeout | null>(null);
 const isIntersecting = ref(false);
 watch(isIntersecting, (value) => {
-  if (value && (count.value === automationComponents.length || count.value === -1)) {
+  if (value) {
+    clearInterval(interval.value!);
+
     setTimeout(() => {
       count.value = -1;
       count.value++;
@@ -85,8 +86,8 @@ watch(isIntersecting, (value) => {
         if (count.value === automationComponents.length) {
           clearInterval(interval.value!);
         }
-      }, 2500);
-    }, 200);
+      }, 1500);
+    }, 100);
   }
 });
 

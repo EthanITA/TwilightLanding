@@ -12,7 +12,7 @@ onMounted(() => {
       :class="{
         'opacity-100': mounted,
       }"
-      class="opacity-0 transition-opacity delay-[2250ms] duration-1000"
+      class="opacity-0 transition-opacity delay-[1000ms] duration-1000 ease-in-out"
     >
       Plan.
     </span>
@@ -20,7 +20,7 @@ onMounted(() => {
       :class="{
         'opacity-100': mounted,
       }"
-      class="opacity-0 transition-opacity delay-[3250ms] duration-1000"
+      class="opacity-0 transition-opacity delay-[1750ms] duration-1000 ease-in-out"
     >
       Execute.
     </span>
@@ -28,7 +28,7 @@ onMounted(() => {
       :class="{
         'opacity-100': mounted,
       }"
-      class="opacity-0 transition-opacity delay-[4250ms] duration-1000"
+      class="opacity-0 transition-opacity delay-[2500ms] duration-1000 ease-in-out"
     >
       Adapt.
     </span>

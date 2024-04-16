@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "nuxt-aos": "^1.2.4",
     "nuxt-gtag": "^2.0.5"
   }
 }

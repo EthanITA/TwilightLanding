@@ -1,24 +1,12 @@
 <template>
-  <div
-    :class="{
-      'opacity-100': mounted,
-      'opacity-0': !mounted,
-    }"
-    class="mt-10 flex justify-center transition-all duration-[2s]"
-  >
+  <div class="mt-10 flex justify-center" data-aos="zoom-in">
     <CTAModal v-model:open="open" />
     <button
       ref="button"
       :class="{
-        'rounded-2xl bg-secondary text-base text-white shadow-2xl duration-700 hover:border-primary hover:bg-primary hover:shadow-primary focus-visible:outline-primary':
-          animationDone,
-        'rounded-md text-sm text-secondary duration-300 hover:border-secondary hover:bg-secondary/95 hover:text-white focus-visible:outline-secondary':
-          !animationDone,
-        'before:ease before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-52':
-          animationDone,
         '!translate-y-0.5 !shadow-none !duration-150': clicked,
       }"
-      class="relative overflow-hidden border border-secondary px-4 py-3 font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="before:ease relative overflow-hidden rounded-2xl border border-secondary bg-secondary px-4 py-3 text-base font-semibold text-white shadow-2xl transition-all duration-700 before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:border-primary hover:bg-primary hover:shadow-primary hover:before:-translate-x-52 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       @mousedown="CtaClick"
     >
       <span class="relative z-10">Join the Waitlist ✨</span>
@@ -26,12 +14,6 @@
   </div>
 </template>
 <script lang="ts" setup>
-const mounted = ref(false);
-const animationDone = ref(false);
-
-const props = defineProps<{
-  animationWait?: number;
-}>();
 const open = ref(false);
 const clicked = ref(false);
 const CtaClick = () => {
@@ -42,13 +24,6 @@ const CtaClick = () => {
     open.value = true;
   }, 220);
 };
-
-onMounted(() => {
-  mounted.value = true;
-  setTimeout(() => {
-    animationDone.value = true;
-  }, props.animationWait ?? 1000);
-});
 </script>
 
 <style scoped></style>

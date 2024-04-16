@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-gtag', '@formkit/auto-animate/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-gtag', '@formkit/auto-animate/nuxt', 'nuxt-aos'],
   devtools: { enabled: false, telemetry: false },
   app: {
     head: {
@@ -98,5 +98,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   gtag: {
     id: 'G-5GTWL3S8GP',
+  },
+  aos: {
+    duration: 1000,
   },
 });

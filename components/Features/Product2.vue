@@ -32,7 +32,7 @@
     <div class="mx-auto max-w-6xl overflow-x-hidden px-6 lg:px-8">
       <div class="mx-auto grid max-w-2xl grid-cols-1 justify-end gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="flex items-center lg:pl-8 lg:pt-4">
-          <div class="flex flex-col lg:max-w-lg">
+          <div class="flex flex-col lg:max-w-lg" data-aos="fade-up">
             <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Focus on what truly matters</h2>
             <p class="mt-6 text-lg leading-8">
               Keep doing what you were doing, Twilight will keep your schedules <span class="font-bold text-gray-700">clean and organized</span>
@@ -42,6 +42,7 @@
 
         <Intersection
           class="mt-auto flex flex-1 flex-col items-end justify-end rounded-lg p-4 md:ml-4 lg:ml-0 [&>*]:w-4/5"
+          data-aos="fade-left"
           @intersect="
             (e) => {
               if (e) {

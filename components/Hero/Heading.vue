@@ -1,20 +1,7 @@
-<script lang="ts" setup>
-import { onMounted } from 'vue';
-
-const mounted = ref(false);
-onMounted(() => {
-  mounted.value = true;
-});
-</script>
+<script lang="ts" setup></script>
 
 <template>
-  <h1
-    :class="{
-      'text-4xl opacity-100 sm:text-6xl': mounted,
-      'text-xl opacity-0 sm:text-2xl': !mounted,
-    }"
-    class="font-semibold tracking-tight text-gray-900 transition-all duration-[2500ms] ease-in-out"
-  >
+  <h1 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl" data-aos="zoom-in">
     Embrace the Future of
     <span class="flex items-center justify-center gap-2 text-center font-bold text-secondary">
       <span class="selection:bg-secondary/40"> Productivity </span>
