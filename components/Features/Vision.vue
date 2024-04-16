@@ -11,9 +11,9 @@
         </p>
       </div>
     </div>
-    <div class="relative overflow-hidden md:mt-[-2rem]" data-aos="zoom-in">
+    <div class="relative overflow-hidden md:mt-[-2rem]">
       <div class="mx-auto max-w-6xl bg-gradient-to-b from-transparent to-primary/5 px-6 lg:px-8">
-        <img alt="Future Tech" class="mb-[-12%]" height="1080" loading="lazy" src="~/assets/images/futureTech.png" width="1920" />
+        <img alt="Future Tech" class="mb-[-12%]" data-aos="zoom-in" height="1080" loading="lazy" src="~/assets/images/futureTech.png" width="1920" />
         <div aria-hidden="true" class="relative">
           <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-primary/5 pt-[7%]" />
         </div>
