@@ -30,7 +30,7 @@
     </div>
 
     <div class="mx-auto max-w-6xl overflow-x-hidden px-6 lg:px-8">
-      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 overflow-hidden sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="flex items-center lg:pl-8 lg:pt-4">
           <div class="lg:max-w-lg" data-aos="fade-up">
             <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">You decide. Twilight schedule.</h2>
@@ -51,12 +51,12 @@
         </div>
 
         <Intersection
-          class="mt-auto flex h-80 flex-1 flex-col items-end justify-end overflow-x-hidden sm:h-[22rem] md:ml-4 lg:ml-0 [&>*]:w-4/5"
-          data-aos="fade-left"
+          v-auto-animate="{ duration: 700 }"
+          class="mt-auto flex h-80 flex-1 flex-col items-end justify-end sm:h-[22rem] md:ml-4 lg:ml-0 [&>*]:w-4/5"
           @intersect="isIntersecting = $event"
         >
           <template v-for="(component, i) in automationComponents">
-            <component :is="component" v-if="i <= count" :key="i" data-aos="fade-left" />
+            <component :is="component" v-if="i <= count" :key="i" />
           </template>
         </Intersection>
       </div>
@@ -109,23 +109,3 @@ const features = [
   },
 ];
 </script>
-
-<style scoped>
-.automationsDemo-move, /* apply transition to moving elements */
-.automationsDemo-enter-active,
-.automationsDemo-leave-active {
-  transition: all 1s ease;
-}
-
-.automationsDemo-enter-from,
-.automationsDemo-leave-to {
-  opacity: 0;
-  transform: translateX(30px);
-}
-
-/* ensure leaving items are taken out of layout flow so that moving
-   animations can be calculated correctly. */
-.automationsDemo-leave-active {
-  position: absolute;
-}
-</style>
