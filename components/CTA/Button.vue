@@ -40,7 +40,7 @@ const CtaClick = () => {
   setTimeout(() => {
     clicked.value = false;
     open.value = true;
-  }, 250);
+  }, 220);
 };
 
 onMounted(() => {
