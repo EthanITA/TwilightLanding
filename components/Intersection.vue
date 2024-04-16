@@ -4,10 +4,7 @@ const emits = defineEmits<{
   (e: 'intersect', isIntersecting: boolean): void;
 }>();
 onMounted(() => {
-  new IntersectionObserver((entries) => {
-    emits('intersect', entries[0].isIntersecting);
-    console.log(entries[0].isIntersecting);
-  }).observe(element.value!);
+  new IntersectionObserver((entries) => emits('intersect', entries[0].isIntersecting)).observe(element.value!);
 });
 </script>
 
