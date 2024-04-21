@@ -2,6 +2,7 @@
   <div class="mt-10 flex justify-center" data-aos="zoom-in">
     <CTAModal v-model:open="open" />
     <button
+      id="join-waitlist"
       ref="button"
       :class="{
         '!translate-y-0.5 !shadow-none !duration-150': clicked,
