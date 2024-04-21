@@ -97,7 +97,7 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   gtag: {
-    id: 'G-5GTWL3S8GP',
+    id: 'GTM-P3RJPX78',
   },
   aos: {
     duration: 1000,
