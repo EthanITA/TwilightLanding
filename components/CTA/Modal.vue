@@ -157,7 +157,7 @@ const subscribe = async () => {
     body: {
       email: email.value,
     },
-  });
+  }).then(() => dataLayer.push({ event: 'joinWaitlist' }));
   subscribing.value = false;
   subscribed.value = true;
   setTimeout(() => (open.value = false), 2500);
