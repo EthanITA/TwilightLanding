@@ -84,14 +84,17 @@ import { ClockIcon, RectangleStackIcon, ShieldExclamationIcon } from '@heroicons
 const features = [
   {
     name: 'Reschedule your plan.',
+    description: 'Automatically tasks rescheduling based on your availability.',
     icon: RectangleStackIcon,
   },
   {
     name: 'Protect from overbooking.',
+    description: 'Avoid double-booking and overlapping schedules.',
     icon: ShieldExclamationIcon,
   },
   {
     name: 'Delay low-priority tasks.',
+    description: 'Automatically delay tasks that are not urgent.',
     icon: ClockIcon,
   },
 ];
