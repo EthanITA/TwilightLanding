@@ -42,7 +42,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'twitter:title',
-          content: 'Twilight: the first fully AI-driven productivity platform',
+          content: 'Twilight: the first AI-driven productivity platform',
         },
         {
           name: 'twitter:description',
@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'twitter:image:alt',
-          content: 'Twilight: the first fully AI-driven productivity platform',
+          content: 'Twilight: the first AI-driven productivity platform',
         },
       ],
       link: [
@@ -92,7 +92,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://twilight-landing.vercel.app/',
-    name: 'Twilight: the first fully AI-driven productivity platform',
+    name: 'Twilight: the first AI-driven productivity platform',
     description:
       'Twilight is an AI-driven platform that let you manage efficiently your commitments and handle easily unexpected changes to your schedule',
     defaultLocale: 'en',
