@@ -35,7 +35,8 @@
           <div class="lg:max-w-lg" data-aos="fade-up">
             <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Twilight prepare. You decide.</h2>
             <p class="mt-6 text-lg leading-8">
-              Twilight is <span class="font-bold">simple to use and reliable</span>. No overcomplicated features and unnecessary settings.
+              Twilight is an AI-driven platform <span class="font-bold">simple to use and reliable</span>. No overcomplicated features and unnecessary
+              settings.
             </p>
             <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
               <div v-for="feature in features" :key="feature.name" class="relative pl-9">

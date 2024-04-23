@@ -23,6 +23,36 @@ export default defineNuxtConfig({
           property: 'og:type',
           content: 'website',
         },
+        // Twitter
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:image',
+          content: 'https://twilight-landing.vercel.app/splash.png',
+        },
+        {
+          name: 'twitter:creator',
+          content: '@twilight',
+        },
+        {
+          name: 'twitter:site',
+          content: '@twilight',
+        },
+        {
+          name: 'twitter:title',
+          content: 'Twilight: the first fully AI-driven productivity platform',
+        },
+        {
+          name: 'twitter:description',
+          content:
+            'Twilight is an AI-driven platform that let you manage efficiently your commitments and handle easily unexpected changes to your schedule\nIt’s a proactive and AI-driven productivity platform, suggesting actions to take without waiting user’s interaction',
+        },
+        {
+          name: 'twitter:image:alt',
+          content: 'Twilight: the first fully AI-driven productivity platform',
+        },
       ],
       link: [
         {
@@ -62,9 +92,9 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://twilight-landing.vercel.app/',
-    name: 'Twilight',
+    name: 'Twilight: the first fully AI-driven productivity platform',
     description:
-      'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
+      'Twilight is an AI-driven platform that let you manage efficiently your commitments and handle easily unexpected changes to your schedule\nIt’s a proactive and AI-driven productivity platform, suggesting actions to take without waiting user’s interaction',
     defaultLocale: 'en',
   },
 });
