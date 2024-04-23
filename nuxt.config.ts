@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-gtag', '@formkit/auto-animate/nuxt', 'nuxt-aos'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-gtag', '@formkit/auto-animate/nuxt', 'nuxt-aos', '@nuxtjs/seo'],
   devtools: { enabled: false, telemetry: false },
   app: {
     head: {
@@ -12,60 +12,18 @@ export default defineNuxtConfig({
           charset: 'utf-8',
         },
         {
-          name: 'description',
-          content:
-            'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
-        },
-        {
           name: 'viewport',
           content: 'width=device-width, initial-scale=1',
-        },
-        // Open Graph
-        {
-          property: 'og:title',
-          content: 'Twilight: Embrace The Future of Productivity',
-        },
-        {
-          property: 'og:description',
-          content:
-            'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
         },
         {
           property: 'og:image',
           content: 'https://twilight-landing.vercel.app/splash.png',
         },
         {
-          property: 'og:url',
-          content: 'https://twilight-landing.vercel.app/',
-        },
-        {
           property: 'og:type',
           content: 'website',
         },
-        {
-          property: 'og:site_name',
-          content: 'Twilight',
-        },
-        // Twitter
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-        {
-          name: 'twitter:title',
-          content: 'Twilight: Embrace The Future of Productivity',
-        },
-        {
-          name: 'twitter:description',
-          content:
-            'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
-        },
-        {
-          name: 'twitter:image',
-          content: 'https://twilight-landing.vercel.app/splash.png',
-        },
       ],
-      title: 'Twilight: Embrace The Future of Productivity',
       link: [
         {
           href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap',
@@ -75,8 +33,8 @@ export default defineNuxtConfig({
         },
         {
           rel: 'icon',
-          type: 'image/svg+xml',
-          href: '/favicon.svg',
+          type: 'image/x-icon',
+          href: '/favicon.ico',
         },
       ],
       script: [
@@ -101,5 +59,12 @@ export default defineNuxtConfig({
   },
   aos: {
     duration: 1000,
+  },
+  site: {
+    url: 'https://twilight-landing.vercel.app/',
+    name: 'Twilight',
+    description:
+      'Twilight is the future of productivity that helps you organize your commitments and tasks minimizing the time spent on planning and organizing.',
+    defaultLocale: 'en',
   },
 });
