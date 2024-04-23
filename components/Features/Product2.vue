@@ -33,10 +33,20 @@
       <div class="mx-auto grid max-w-2xl grid-cols-1 justify-end gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="flex items-center lg:pl-8 lg:pt-4">
           <div class="flex flex-col lg:max-w-lg" data-aos="fade-up">
-            <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Focus on what truly matters</h2>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Adapt your schedule</h2>
             <p class="mt-6 text-lg leading-8">
-              Keep doing what you were doing, Twilight will keep your schedules <span class="font-bold text-gray-700">clean and organized</span>
+              Focus on what truly matters. Twilight will keep your schedules <span class="font-bold text-gray-700">clean and organized</span>
             </p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
+              <div v-for="feature in features" :key="feature.name" class="relative pl-9">
+                <dt class="inline font-bold">
+                  <component :is="feature.icon" aria-hidden="true" class="absolute left-1 top-1 h-5 w-5" />
+                  {{ feature.name }}
+                </dt>
+                {{ ' ' }}
+                <dd class="inline">{{ feature.description ?? '' }}</dd>
+              </div>
+            </dl>
           </div>
         </div>
 
@@ -46,7 +56,7 @@
           @intersect="
             (e) => {
               if (e) {
-                $refs.video.play();
+                ($refs.video as HTMLVideoElement).play();
               }
             }
           "
@@ -67,6 +77,24 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import type { Component } from 'vue';
+import { ClockIcon, RectangleStackIcon, ShieldExclamationIcon } from '@heroicons/vue/24/outline';
+
+const features = [
+  {
+    name: 'Reschedule your plan.',
+    icon: RectangleStackIcon,
+  },
+  {
+    name: 'Protect from overbooking.',
+    icon: ShieldExclamationIcon,
+  },
+  {
+    name: 'Delay low-priority tasks.',
+    icon: ClockIcon,
+  },
+];
+</script>
 
 <style scoped></style>

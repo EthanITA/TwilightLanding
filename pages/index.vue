@@ -1,8 +1,8 @@
 <template>
   <main>
     <HeroSection />
-    <FeaturesProduct2 />
     <FeaturesProduct />
+    <FeaturesProduct2 />
     <FeaturesVision />
     <PlusCTA2 />
   </main>

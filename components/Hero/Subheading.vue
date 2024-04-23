@@ -14,7 +14,7 @@ onMounted(() => {
       }"
       class="opacity-0 transition-opacity delay-[1000ms] duration-1000 ease-in-out"
     >
-      Plan.
+      Easy.
     </span>
     <span
       :class="{
@@ -22,7 +22,7 @@ onMounted(() => {
       }"
       class="opacity-0 transition-opacity delay-[1750ms] duration-1000 ease-in-out"
     >
-      Execute.
+      Efficient.
     </span>
     <span
       :class="{
@@ -30,7 +30,7 @@ onMounted(() => {
       }"
       class="opacity-0 transition-opacity delay-[2500ms] duration-1000 ease-in-out"
     >
-      Adapt.
+      Proactive.
     </span>
   </p>
 </template>
