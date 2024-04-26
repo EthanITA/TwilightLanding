@@ -18,7 +18,7 @@
 <script lang="ts" setup>
 const open = ref(false);
 defineProps<{
-  big: boolean;
+  big?: boolean;
 }>();
 </script>
 
