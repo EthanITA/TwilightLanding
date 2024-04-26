@@ -7,31 +7,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <p class="mt-6 text-lg leading-8 text-gray-600">
-    <span
-      :class="{
-        'opacity-100': mounted,
-      }"
-      class="opacity-0 transition-opacity delay-[1000ms] duration-1000 ease-in-out"
-    >
-      Easy.
-    </span>
-    <span
-      :class="{
-        'opacity-100': mounted,
-      }"
-      class="opacity-0 transition-opacity delay-[1750ms] duration-1000 ease-in-out"
-    >
-      Efficient.
-    </span>
-    <span
-      :class="{
-        'opacity-100': mounted,
-      }"
-      class="opacity-0 transition-opacity delay-[2500ms] duration-1000 ease-in-out"
-    >
-      Proactive.
-    </span>
+  <p class="mt-6 max-w-xl text-lg leading-8 text-gray-600 md:text-xl">
+    Twilight helps busy people to stay <span class="font-bold">ahead</span> of their schedule <span class="font-bold">effortlessly</span>
+    with AI-driven suggestions.
   </p>
 </template>
 

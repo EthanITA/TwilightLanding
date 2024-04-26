@@ -1,6 +1,13 @@
 <template>
-  <header>
-    <nav aria-label="Global" class="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8">
+  <Intersection @intersect="(isIntersecting) => (isScrolling = !isIntersecting)" />
+  <header
+    :class="{
+      'overflow-hidden bg-white shadow': isScrolling,
+      'bg-transparent': !isScrolling,
+    }"
+    class="fixed isolate z-10 w-full transition-all duration-300 ease-in-out"
+  >
+    <nav aria-label="Global" class="mx-auto flex max-w-6xl items-center justify-between p-4 lg:px-8">
       <div class="flex lg:flex-1">
         <a class="-m-1.5 select-none p-1.5" draggable="false" href="#">
           <span class="sr-only">Twilight</span>
@@ -21,6 +28,7 @@
           <a class="text-sm font-semibold leading-6" href="#">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
       </template>
+      <CTAButton />
     </nav>
     <Dialog :open="mobileMenuOpen" as="div" class="lg:hidden" @close="mobileMenuOpen = false">
       <div class="fixed inset-0 z-10" />
@@ -54,6 +62,7 @@
       </DialogPanel>
     </Dialog>
   </header>
+  <div class="h-20" />
 </template>
 
 <script setup>
@@ -61,6 +70,7 @@ import { ref } from 'vue';
 import { Dialog, DialogPanel } from '@headlessui/vue';
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 
+const isScrolling = ref(false);
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },

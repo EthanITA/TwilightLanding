@@ -1,8 +1,8 @@
 <template>
-  <div class="flex h-full flex-col bg-white">
-    <Header />
+  <Header />
+  <main class="-mt-20">
     <NuxtPage />
-    <Footer />
-  </div>
+  </main>
+  <Footer />
 </template>
 <script lang="ts" setup></script>

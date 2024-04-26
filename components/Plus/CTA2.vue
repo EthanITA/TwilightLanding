@@ -8,7 +8,7 @@
           <div class="relative mx-auto max-w-2xl text-center" data-aos="fade-up">
             <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Boost your productivity.<br />Enhance your workflow.</h2>
             <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Join the thousands of users who have already taken the leap.</p>
-            <CTAButton />
+            <CTAButton big class="mt-10" />
           </div>
         </div>
       </div>
