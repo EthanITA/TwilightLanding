@@ -1,8 +1,4 @@
 <template>
-  <Header />
-  <main class="-mt-20">
-    <NuxtPage />
-  </main>
-  <Footer />
+  <NuxtPage />
 </template>
 <script lang="ts" setup></script>

@@ -2,13 +2,18 @@
   <footer aria-labelledby="footer-heading">
     <div class="mx-auto max-w-6xl px-6 pb-8 pt-4 lg:px-8">
       <div class="mt-16 border-t border-white/10 pt-8 sm:mt-4 md:flex md:items-center md:justify-between lg:mt-12">
-        <div class="flex space-x-6 md:order-2">
+        <div class="flex space-x-6 md:order-3">
           <a v-for="item in navigation.social" :key="item.name" :href="item.href" :title="item.title" class="hover:text-gray-500">
             <span class="sr-only">{{ item.name }}</span>
             <component :is="item.icon" aria-hidden="true" class="h-6 w-6" />
           </a>
         </div>
-        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2024 Twilight. All rights reserved.</p>
+        <div class="mt-8 flex items-center gap-2 max-sm:flex-col sm:gap-8 md:order-1 md:mt-0">
+          <p class="text-xs leading-5 text-gray-400">&copy; 2024 Twilight. All rights reserved.</p>
+          <p v-for="item in navigation.legal" :key="item.name" class="text-xs leading-5 text-gray-400 underline">
+            <a :href="item.href" class="hover:text-gray-800" target="_blank">{{ item.name }}</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>
@@ -38,9 +43,8 @@ const navigation = {
     { name: 'Partners', href: '#' },
   ],
   legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: 'Privacy Policy', href: '/privacy-policy' },
+    { name: 'Cookie Policy', href: '/cookie-policy' },
   ],
   social: [
     {
