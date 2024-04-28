@@ -50,16 +50,24 @@
             </dl>
           </div>
         </div>
-
-        <Intersection
-          v-auto-animate="{ duration: 700 }"
-          class="mt-auto flex h-80 flex-1 flex-col items-end justify-end sm:h-[22rem] md:ml-4 lg:ml-0 [&>*]:w-4/5"
-          @intersect="isIntersecting = $event"
+        <div
+          class="relative -z-50 mt-auto flex flex-1 flex-col items-end justify-end rounded-3xl md:ml-4 lg:ml-0"
+          data-aos="fade-left"
+          data-aos-once="true"
         >
-          <template v-for="(component, i) in automationComponents">
-            <component :is="component" v-if="i <= count" :key="i" />
-          </template>
-        </Intersection>
+          <video ref="video" loop muted playsinline poster="~/assets/posters/notifications.png" preload="none">
+            <source src="~/assets/videos/notifications.mp4" type="video/mp4" />
+          </video>
+          <Intersection
+            class="absolute bottom-[50%] right-[50%] mb-10"
+            @intersect="
+              (e) => {
+                if (e) ($refs.video as HTMLVideoElement).play();
+                else ($refs.video as HTMLVideoElement).pause();
+              }
+            "
+          />
+        </div>
       </div>
     </div>
   </div>

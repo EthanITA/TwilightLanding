@@ -50,20 +50,15 @@
           </div>
         </div>
 
-        <Intersection
-          class="mt-auto flex flex-1 flex-col items-end justify-end rounded-lg p-4 md:ml-4 lg:ml-0 [&>*]:w-4/5"
+        <div
+          class="relative mt-auto flex flex-1 flex-col items-end justify-end rounded-lg p-4 md:ml-4 lg:ml-0 [&>*]:w-4/5"
           data-aos="fade-left"
-          @intersect="
-            (e) => {
-              if (e) {
-                ($refs.video as HTMLVideoElement).play();
-              }
-            }
-          "
+          data-aos-once="true"
         >
           <video
             ref="video"
             class="rounded-3xl border border-gray-100 bg-white p-2 shadow-sm"
+            loop
             muted
             playsinline
             poster="~/assets/posters/autoreschedule.png"
@@ -71,7 +66,16 @@
           >
             <source src="~/assets/videos/autoreschedule.mp4" type="video/mp4" />
           </video>
-        </Intersection>
+          <Intersection
+            class="absolute bottom-[50%] right-[50%] mb-10"
+            @intersect="
+              (e) => {
+                if (e) ($refs.video as HTMLVideoElement).play();
+                else ($refs.video as HTMLVideoElement).pause();
+              }
+            "
+          />
+        </div>
       </div>
     </div>
   </div>
