@@ -43,7 +43,7 @@
                   <div v-auto-animate class="mt-3 text-center transition-all duration-200 sm:mt-5">
                     <DialogTitle as="h3" class="text-base font-semibold leading-6 text-gray-900">
                       <div v-auto-animate>
-                        <p v-if="!subscribed">You'll be one of the first to be invited!</p>
+                        <p v-if="!subscribed">Join the waitlist, we'll notify you as soon as we launch!</p>
                         <p v-else>Thank you for subscribing!</p>
                       </div>
                     </DialogTitle>
@@ -157,7 +157,7 @@ const subscribe = async () => {
     body: {
       email: email.value,
     },
-  }).then(() => dataLayer.push({ event: 'joinWaitlist' }));
+  }).then(() => dataLayer?.push({ event: 'joinWaitlist' }));
   subscribing.value = false;
   subscribed.value = true;
   setTimeout(() => (open.value = false), 2500);
