@@ -6,7 +6,7 @@ const consented = useLocalStorage<'consented' | 'declined' | undefined>('cookie-
 </script>
 
 <template>
-  <div v-if="!consented && $.isMounted" class="fixed bottom-0 right-0 p-8 transition-all delay-100">
+  <div v-if="!consented" class="fixed bottom-0 right-0 p-8">
     <div class="relative flex w-96 flex-col rounded-xl border border-gray-100 bg-gray-50 p-6 shadow-md">
       <div class="absolute right-4 top-4 h-6 w-6">
         <svg fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
