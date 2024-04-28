@@ -58,7 +58,6 @@
           <video
             ref="video"
             class="rounded-3xl border border-gray-100 bg-white p-2 shadow-sm"
-            loop
             muted
             playsinline
             poster="~/assets/posters/autoreschedule.png"

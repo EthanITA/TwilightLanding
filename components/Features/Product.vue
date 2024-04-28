@@ -55,7 +55,7 @@
           data-aos="fade-left"
           data-aos-once="true"
         >
-          <video ref="video" loop muted playsinline poster="~/assets/posters/notifications.png" preload="none">
+          <video ref="video" muted playsinline poster="~/assets/posters/notifications.png" preload="none">
             <source src="~/assets/videos/notifications.mp4" type="video/mp4" />
           </video>
           <Intersection
