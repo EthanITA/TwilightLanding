@@ -157,7 +157,10 @@ const subscribe = async () => {
     body: {
       email: email.value,
     },
-  }).then(() => dataLayer?.push({ event: 'joinWaitlist' }));
+  }).then(() => {
+    if (dataLayer) dataLayer?.push({ event: 'joinWaitlist' });
+    fbq('track', 'Lead');
+  });
   subscribing.value = false;
   subscribed.value = true;
   setTimeout(() => (open.value = false), 2500);

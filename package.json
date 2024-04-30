@@ -20,6 +20,7 @@
     "@vercel/speed-insights": "^1.0.10",
     "@vueuse/core": "^10.9.0",
     "nuxt": "^3.11.1",
+    "nuxt3-meta-pixel": "^1.0.9",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",
     "vue": "^3.4.21",

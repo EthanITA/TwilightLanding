@@ -1,6 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-gtag', '@formkit/auto-animate/nuxt', 'nuxt-aos', '@nuxtjs/seo', '@nuxt/content'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    'nuxt-gtag',
+    '@formkit/auto-animate/nuxt',
+    'nuxt-aos',
+    '@nuxtjs/seo',
+    '@nuxt/content',
+    'nuxt3-meta-pixel',
+  ],
   devtools: { enabled: false, telemetry: false },
   app: {
     head: {
@@ -96,5 +105,11 @@ export default defineNuxtConfig({
     description:
       'Twilight is an AI-driven platform that proactively manages your schedule by suggesting timely actions, effortlessly keeping you ahead',
     defaultLocale: 'en',
+  },
+  facebook: {
+    track: 'PageView',
+    pixelId: '396140866566120',
+    autoPageView: true,
+    disabled: false,
   },
 });

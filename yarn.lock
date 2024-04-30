@@ -1230,7 +1230,7 @@
     unimport "^3.7.1"
     untyped "^1.4.2"
 
-"@nuxt/kit@^3.10.1", "@nuxt/kit@^3.10.2", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.9.3":
+"@nuxt/kit@^3.10.1", "@nuxt/kit@^3.10.2", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.4.2", "@nuxt/kit@^3.9.3":
   version "3.11.2"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.11.2.tgz#dfc43c05992691bcd6aa58c14f88cf43e3abb788"
   integrity sha512-yiYKP0ZWMW7T3TCmsv4H8+jEsB/nFriRAR8bKoSqSV9bkVYWPE36sf7JDux30dQ91jSlQG6LQkB3vCHYTS2cIg==
@@ -6756,6 +6756,13 @@ nuxt-site-config@2.2.12, nuxt-site-config@^2.2.11, nuxt-site-config@^2.2.12:
     sirv "^2.0.4"
     site-config-stack "2.2.12"
     ufo "^1.4.0"
+
+nuxt3-meta-pixel@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/nuxt3-meta-pixel/-/nuxt3-meta-pixel-1.0.9.tgz#6d46fe305052e29958d3c80b72b0cd09a575d111"
+  integrity sha512-fi+Dg2gA/q4x7w+9rsjcR79wHaLWcb1vCPlukiZNZnHtgbP2BkL53/h1BGiPPrTp0woEsx26jFEEf9+lf6ntkg==
+  dependencies:
+    "@nuxt/kit" "^3.4.2"
 
 nuxt@^3.11.1:
   version "3.11.1"
