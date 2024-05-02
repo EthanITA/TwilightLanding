@@ -159,7 +159,7 @@ const subscribe = async () => {
     },
   }).then(() => {
     if (dataLayer) dataLayer?.push({ event: 'joinWaitlist' });
-    fbq('track', 'Lead');
+    fbq('track', 'Contact');
   });
   subscribing.value = false;
   subscribed.value = true;
